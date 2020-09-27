@@ -98,6 +98,11 @@ public class BatteryMeterView extends CardView {
         progress_Text.setGravity(Gravity.CENTER_HORIZONTAL);
         progress_Text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
         //progress_Text.setAlpha((float) 0.7);
+        progress_Text.setTextSize(60);
+        progress_Text.setTextColor(Utils.getColorAttrDefaultColor(context, android.R.attr.textColorPrimary));
+        progress_Text.setGravity(Gravity.CENTER_HORIZONTAL);
+        progress_Text.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT));
+        // progress_Text.setAlpha((float) 0.8);
         LinearLayout linearLayout = new LinearLayout(context);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
