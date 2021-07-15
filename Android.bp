@@ -30,7 +30,7 @@ android_library {
     srcs: ["src/**/*.java", 
         "Olymp/src/**/*.java"],
 
-    aaptflags: ["--extra-packages com.settings.olymp"],
+    aaptflags: ["--extra-packages com.settings.olymp", "--extra-packages com.factor.bouncy"],
 
     resource_dirs: ["res",
                     "Olymp/res"
@@ -67,6 +67,8 @@ android_library {
         "VendorSupport-preference",
         "vendor.lineage.fastcharge-V1.0-java",
         "faceunlock_framework",
+        "androidx.dynamicanimation_dynamicanimation",
+        "bouncy",
     ],
 
     libs: [
@@ -106,4 +108,15 @@ android_app {
 android_library_import {
     name: "contextualcards",
     aars: ["libs/contextualcards.aar"],
+}
+
+android_library_import {
+    name: "glide",
+    aars: ["libs/glide-4.9.0.aar"],
+}
+
+android_library_import {
+    name: "bouncy",
+    aars: ["libs/bouncy-release.aar"],
+    sdk_version: "current",
 }
